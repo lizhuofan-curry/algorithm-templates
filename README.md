@@ -8,7 +8,7 @@
 
 学习算法的过程中，很多模板会反复出现，例如：
 
-- [二分]（basic/binary_search.cpp）
+- - [二分](basic/binary_search.cpp)
 - 前缀和
 - 差分
 - 双指针
