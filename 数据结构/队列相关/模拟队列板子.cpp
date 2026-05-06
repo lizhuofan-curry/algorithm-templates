@@ -1,0 +1,31 @@
+#include <bits/stdc++.h>
+using namespace std;
+const int N=1e5+10;
+typedef long long ll;
+ll q[N],tt=-1,hh=0;
+int main()
+{
+    int m;
+    cin>>m;
+    while(m--)
+    {
+        ll x;
+        string a;
+        cin>>a;
+        if(a=="push")
+        {
+            cin>>x;
+            q[++tt]=x;
+        }
+        if(a=="pop")
+        hh++;
+        if(a=="empty")
+        {
+            if(hh>tt) cout<<"YES"<<"\n";
+            else cout<<"NO"<<"\n";
+        }
+        if(a=="query")
+        cout<<q[hh]<<"\n";
+    }
+    return 0;
+}
