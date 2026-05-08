@@ -1,0 +1,49 @@
+#include <bits/stdc++.h>
+using namespace std;
+const int N=1e5+10;
+int p[N],siz[N];
+int find(int x)
+{
+    if(p[x]!=x) p[x]=find(p[x]);
+    return p[x];
+}
+int main()
+{
+    cin.tie(0);
+    ios::sync_with_stdio(false);
+    int n,m;
+    cin>>n>>m;
+    for(int i=1;i<=n;i++)
+    {
+        p[i]=i;
+        siz[i]=1;
+    }
+    while(m--)
+    {
+        char op[3];
+        int a,b;
+        cin>>op;
+        if(op[0]=='C') 
+        {
+            cin>>a>>b;
+            if(find(a)==find(b)) continue;
+            else
+            {
+                 siz[find(b)]+=siz[find(a)];
+                    p[find(a)]=find(b);
+            }
+        }
+        if(op[1]=='1') 
+        {
+            cin>>a>>b;
+            if(find(a)==find(b)) cout<<"Yes"<<"\n";
+            else cout<<"No"<<"\n";
+        }
+        if(op[1]=='2') 
+        {
+            cin>>a;
+            cout<<siz[find(a)]<<"\n";
+        }
+    }
+    return 0;
+}
