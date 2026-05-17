@@ -35,6 +35,7 @@
   - [拓扑序列](搜索与图论)
   - [Dijkstra](搜索与图论/Dijkstra)
   - [Bellman_Ford](搜索与图论/Bellman_Ford)
+  - [SPFA](搜索与图论/SPFA)
 - 数学相关模板
 - 动态规划
 - 贪心
