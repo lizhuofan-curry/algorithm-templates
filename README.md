@@ -38,6 +38,7 @@
   - [SPFA](搜索与图论/SPFA)
   - [Floyd](搜索与图论/Floyd)
   - [Prim](搜索与图论/Prim)
+  - [Kruskal](搜索与图论/Kruskal)
 - 数学相关模板
 - 动态规划
 - 贪心
