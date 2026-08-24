@@ -27,8 +27,8 @@ int main()
   int i=0,j=0;
   while(i<n && j<m)
     {
-      if(a[i]==b[j]) i++
-        else j++;
+      if(a[i]==b[j]) i++;
+      else j++;
     }
   if(i==n) cout<<"Yes";
   else cout<<"No";

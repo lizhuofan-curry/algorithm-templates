@@ -1,7 +1,5 @@
-//求n的第k位数字: 
-n >> k & 1
-//返回n的最后一位1：
-lowbit(n) = n & -n
+// 求 n 的第 k 位数字：n >> k & 1
+// 返回 n 的最后一位 1：lowbit(n) = n & -n
 #include <bits/stdc++.h>
 using namespace std;
 const int N=1e5+10;

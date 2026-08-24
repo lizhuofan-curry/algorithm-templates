@@ -27,12 +27,12 @@ int main()
   for(int i=0,j=0;i<n;i++)
     {
       s[a[i]]++;
-      while(s[a[i]>1)
+      while(s[a[i]]>1)
         {
           s[a[j]]--;
           j++;
         }
-      res=max(res,i-j+1)
+      res=max(res,i-j+1);
     }
   cout<<res;
   return 0;
